@@ -13,6 +13,5 @@ scikit-learn==0.23.1
 pandas==1.0.5
 pickle4==0.0.1
 tensorflow==2.2.0
-werkzeug==1.0.1
 os
 h5py
