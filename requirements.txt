@@ -12,6 +12,6 @@ numpy==1.19.0
 scikit-learn==0.23.1
 pandas==1.0.5
 pickle4==0.0.1
-tensorflow==2.2.0
+tensorflow==2.1.0
 os
 h5py
