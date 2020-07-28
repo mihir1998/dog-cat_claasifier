@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	body{
+		background: lightgrey;
+		top:0;
+		left: 0;
+		text-align: center;
+	}
+	h1{
+		
+		color:purple;
+		padding:10px;
+	}
+	h2{
+
+		color: purple;
+		padding:10px;
+	}
+	h3{
+
+		color:green;
+		font-size: 40px;
+		
+	}
+	#file{
+		border:1px solid purple;
+	}
+</style>
+<body>
+	
+	<h1>Dog OR Cat Image Classifier </h1>
+	<h2>Upload Dog OR Cat Image To Predict</h2>
+		<form method="POST" action="{{url_for('predictt')}}" enctype="multipart/form-data">
+
+		<input id="file" type="file" name="file">
+		<input type="submit" name="submit">
+	</form>
+
+	{% if prediction == 1 %}
+	<h3>Dog</h3>
+	{% else %}
+	<h3>Cat</h3>
+	{% endif %}
+</body>
+</html>
